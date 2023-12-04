@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://vew2v36s1jdg"]
+
+[ext_resource type="Script" path="res://Button.gd" id="1_3y2r3"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(155, 102)
+
+[node name="Button" type="Button" parent="."]
+offset_left = -135.0
+offset_top = -90.0
+offset_right = 478.0
+offset_bottom = 227.0
+script = ExtResource("1_3y2r3")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
